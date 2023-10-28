@@ -71,9 +71,8 @@ jobs:
          echo "Handler name is ${{ github.event.inputs.handler }}"
 
          for dir in "${{ env.SERVICES }}"; do
-               cd $dir
                echo "Service is $dir"
-              cd ..
+            
          done
          
 #  startsWith(github.ref, 'refs/heads/RELEASE')
